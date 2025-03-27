@@ -1,0 +1,84 @@
+/* Resetovanje osnovnih stilova */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+    overflow: hidden; /* Prevents unwanted scrollbars */
+}
+
+/* Glavna kutija aplikacije */
+.app-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Naslov */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Kontejner za chatbot iframe */
+.chatbot-container {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Stilizovanje dugmeta za instalaciju */
+#installBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#installBtn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsivnost za manje uređaje */
+@media (max-width: 600px) {
+    .app-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .chatbot-container {
+        height: 400px;
+    }
+}
